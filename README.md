@@ -1,8 +1,8 @@
 # Python Project #
 
-A game of risk, as a hitman
+### A game of risk, as a hitman
 
-#==================> Created in Visual Studio Code
-#==================> Made with Python
+- Created in Visual Studio Code
+- Made with Python
 
-Created by Jebby
+## *Created by Jebby*
