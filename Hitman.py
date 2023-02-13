@@ -15,7 +15,7 @@ def getValues():
         #else:
             #print("test", luck)
             #print("target MISS")
-        print("Target has been HIT" if hitChance <= luck else "target MISS") #Credits to ChatGPT
+        print("Target has been HIT" if hitChance <= luck else "target MISS") #Credits to ChatGPT#
 
     def guardLuck():
         print(filler)
