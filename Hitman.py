@@ -1,4 +1,3 @@
-
 import random
 
 global filler
@@ -11,18 +10,18 @@ def getValues():
     def hit():
         #print("test", luck)
         hitChance = random.randint(1,100)
-        if hitChance <= luck:
-            print("target has been HIT")
-        else:
+        #if hitChance <= luck:
+            #print("target has been HIT")
+        #else:
             #print("test", luck)
-            print("target MISS")
+            #print("target MISS")
+        print("Target has been HIT" if hitChance <= luck else "target MISS") #Credits to ChatGPT
 
     def guardLuck():
         print(filler)
         guardChance = 100 - (randGuards * 2)
         print("You will have a", guardChance,"% chance to escape to a higher level")
-        escapePrompt = input("escape? y|n => ")
-        escapePrompt.lower()
+        escapePrompt = input("escape? y|n => ").lower()
         print(filler)
         if escapePrompt == "y":
             escapeChance = random.randint(1,100)
@@ -68,3 +67,4 @@ def getValues():
 
 
 getValues()
+
