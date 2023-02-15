@@ -1,8 +1,8 @@
-# Python Project v1.0.0.1-release #
+# Python Project v1.0.1-release #
 
 ### A game of risk, as a hitman
 
 - Created in Visual Studio Code
-- Made with Python
+- Made with Python, Tkinter
 
 ## *Created by Jebby*
