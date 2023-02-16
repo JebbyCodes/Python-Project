@@ -6,21 +6,21 @@ import random
 
 window = Tk()
 window.title('hitman.py')
-window.iconbitmap(r'C:\Users\Asala\OneDrive\Documents\Python Scripts\2023 Python\hitman.ico')
+window.iconbitmap(r'REDACTED\hitman.ico')
 window.geometry("400x200+500+300") #"window width x window height + position right + position down"
 #scroll = Scrollbar(window)
 #scroll.pack()
 
 
 #logoPath = r"C:\Users\Asala\OneDrive\Documents\Python Scripts\2023 Python\hitmanLogo.png"
-logo = ImageTk.PhotoImage(Image.open(r"C:\Users\Asala\OneDrive\Documents\Python Scripts\2023 Python\hitmanLogo.png"))
+logo = ImageTk.PhotoImage(Image.open(r"REDACTED\hitmanLogo.png"))
 showLogo = tk.Label(window, image = logo)
 showLogo.pack()
 
 
 restartWindow = Tk()
 restartWindow.title('Restart')
-restartWindow.iconbitmap(r'C:\Users\Asala\OneDrive\Documents\Python Scripts\2023 Python\restart.ico')
+restartWindow.iconbitmap(r'REDACTED\restart.ico')
 restartWindow.geometry("205x50+900+300") #"window width x window height + position right + position down"
 
 def startPressed():
