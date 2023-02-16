@@ -170,4 +170,4 @@ def destroyWindow():
 restartButton = Button(restartWindow, text="Restart?", command = destroyWindow)
 restartButton.pack()
 
-window.mainloop() # GUI main event loop
+window.mainloop() # GUI main event loop #
