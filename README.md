@@ -5,4 +5,6 @@
 - Created in Visual Studio Code
 - Made with Python, Tkinter
 
+<sub><sup> created by a beginner... </sup><sub>
+
 ## *Created by Jebby*
