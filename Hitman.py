@@ -4,11 +4,13 @@ import tkinter as tk
 from PIL import ImageTk, Image
 import random
 
-
 window = Tk()
 window.title('hitman.py')
 window.iconbitmap(r'C:\Users\Asala\OneDrive\Documents\Python Scripts\2023 Python\hitman.ico')
-window.geometry("225x50+500+300") #"window width x window height + position right + position down"
+window.geometry("400x200+500+300") #"window width x window height + position right + position down"
+#scroll = Scrollbar(window)
+#scroll.pack()
+
 
 #logoPath = r"C:\Users\Asala\OneDrive\Documents\Python Scripts\2023 Python\hitmanLogo.png"
 logo = ImageTk.PhotoImage(Image.open(r"C:\Users\Asala\OneDrive\Documents\Python Scripts\2023 Python\hitmanLogo.png"))
@@ -19,8 +21,11 @@ showLogo.pack()
 restartWindow = Tk()
 restartWindow.title('Restart')
 restartWindow.iconbitmap(r'C:\Users\Asala\OneDrive\Documents\Python Scripts\2023 Python\restart.ico')
-restartWindow.geometry("205x50+500+500") #"window width x window height + position right + position down"
+restartWindow.geometry("205x50+900+300") #"window width x window height + position right + position down"
 
+def startPressed():
+    startButton.pack_forget()
+    getValues()
 
 global filler
 filler = "======================================================================================"
@@ -29,8 +34,9 @@ filler = "======================================================================
 
 def getValues():
     
-    startButton.pack_forget()
-
+    for widget in window.winfo_children():
+        widget.destroy()
+    
 
     def hit():
         #print("test", luck)
@@ -86,6 +92,11 @@ def getValues():
 
                 print("Bounty Lost: PLACEHOLDER")
             else:
+                invalidInputlabel = Label(window,text="INVALID INPUT")
+                invalidInputlabel.config(fg="yellow", bg = "black")
+                invalidInputlabel.pack()
+                fillerLabel = Label(window,text=filler)
+                fillerLabel.pack()
                 print("INVALID INPUT")
                 guardLuck()
 
@@ -134,6 +145,8 @@ def getValues():
         print("Go highrise?")
         print(filler)
         randGuards = random.randint(1,20)
+        guardAmount = Label(window,text=f"There will be {randGuards} guards around the building and inside")
+        guardAmount.pack()
         print("There will be", randGuards, "guards around the building and inside")
         luck = 100 - (randGuards * 2)
         print(luck,"% to escape to a higher level")
