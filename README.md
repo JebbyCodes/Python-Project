@@ -15,6 +15,7 @@
 **<ins>Important:</ins>**
 - **The file paths to the resources in the "hitman.py" must be made yourself.**
 - **For privacy reasons.**
+- **In command prompt (run as admin) type: pip install Pillow**
 
 
 ## `* Created by Jebby *`
